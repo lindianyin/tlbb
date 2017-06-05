@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FoxScriptEngine">
+      <UniqueIdentifier>{975a4191-2706-4c4b-8f2f-9f46882437e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FoxScriptEngine\Src">
+      <UniqueIdentifier>{c9ba9b53-fa38-4c93-9a7f-8b6837f704d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FoxScriptEngine\Src\FoxDebug.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxFile.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxFilePath.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxList.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxLuaScript.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxLuaScriptSet.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxMemBase.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxMemClass.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxNode.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxPakFile.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxScript.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxStrBase.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="FoxScriptEngine\Src\FoxWin32.cpp">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FoxScriptEngine\Src\FoxDebug.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxFile.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxFilePath.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxList.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxLuaScript.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxLuaScriptSet.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxMemBase.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxMemClass.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxNode.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxPakFile.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxScript.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxStrBase.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\FoxWin32.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+    <ClInclude Include="FoxScriptEngine\Src\LuaLib.h">
+      <Filter>FoxScriptEngine\Src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B778DC7-4B20-4941-8FAB-20C5F061B380}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FoxScriptLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./FoxScriptEngine/Src;./FoxScriptEngine;./;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FoxScriptEngine\Src\FoxDebug.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxFile.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxFilePath.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxList.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxLuaScript.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxLuaScriptSet.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxMemBase.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxMemClass.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxNode.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxPakFile.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxScript.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxStrBase.cpp" />
+    <ClCompile Include="FoxScriptEngine\Src\FoxWin32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FoxScriptEngine\Src\FoxDebug.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxFile.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxFilePath.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxList.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxLuaScript.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxLuaScriptSet.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxMemBase.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxMemClass.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxNode.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxPakFile.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxScript.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxStrBase.h" />
+    <ClInclude Include="FoxScriptEngine\Src\FoxWin32.h" />
+    <ClInclude Include="FoxScriptEngine\Src\LuaLib.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
